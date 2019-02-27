@@ -50,7 +50,7 @@ class PurchaseRequest extends AbstractRequest
     public function getEndpoint()
     {
         if ($this->getTestmode()) {
-            return 'https://nib.vub.sk/epay/merchant'; // vub test server
+            return 'https://nib.vub.sk/nepay/merchant'; // vub test server
 //             return 'https://platby.tomaj.sk/payment/eplatby-hmac';
         } else {
             return 'https://ib.vub.sk/e-platbyeuro.aspx';
